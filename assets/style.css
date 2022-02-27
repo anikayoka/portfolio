@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #33FFFF;
+  --primary-color: #fce138;
   --secondary-color: #FF6699;
-  --tertiary-color: #666699;
+  --tertiary-color: #44bd32;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 /* HEADER / NAV BAR STYLES START */
 
 header {
-  padding: 20px 35px;
+  padding: 10px 35px;
   background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
@@ -68,33 +68,81 @@ header nav ul li a:hover {
   border-radius: 15px;
   text-shadow: none;
 }
-
 /* HEADER / NAVBAR STYLES END */
+
+section {
+  padding: 60px;
+}
 
 /* HERO STYLES START */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("./images/hero-bg3.png");
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
   background-attachment: fixed;
-  background-position: 80%;
-  padding: 150px;
+  background-position: 30%;
+  padding: 140px;
+  width: auto;
 }
 
 .hero h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-style: italic;
-  width: 95%;
+  width: 100%;
   text-align: right;
   margin: 3.5%;
-  font-size: 25px;
+  font-size: 50px;
   line-height: 1.2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.main {
-  background: #F5EEF8;
+main {
+  background: #ffff;
 }
 
+.personal h2 {
+  color: #30336b;
+  border-right: 2px solid #30336b;
+}
+
+.personal p {
+  color: #30336b;
+  font-size: 15px;
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.about,
+.work,
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  margin: auto;
+}
+
+.contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.contact ul li a {
+  padding: 10px 100px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+.contact ul li a:hover {
+  background: var(--primary-color);
+  color: #ffff;
+  border-radius: 15px;
+  text-shadow: none;
+}
