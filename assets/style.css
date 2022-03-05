@@ -18,7 +18,7 @@ body {
 /* HEADER / NAV BAR STYLES START */
 
 header {
-  padding: 10px 35px;
+  padding: 20px 35px;
   background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
@@ -72,29 +72,36 @@ header nav ul li a:hover {
   border-radius: 15px;
   text-shadow: none;
 }
-/* HEADER / NAVBAR STYLES END */
+
+/* STYLE ALL SECTION TAGS */
+section {
+  padding: 60px;
+}
 
 /* HERO STYLES START */
 .hero {
   background-image: url("./images/hero-bg3.png");
   background-size: cover;
   background-attachment: fixed;
-  background-position: 30%;
-  padding: 140px;
+  background-position: 7.5%;
+  padding: 0;
   width: auto;
   border: 1px solid var(--primary-color);
 }
 
-.hero h2 {
-  color: var(--primary-color);
+.tagline {
   font-style: italic;
   width: 100%;
   text-align: right;
-  margin: 3.5%;
-  font-size: 50px;
+  margin: 2%;
+  padding-top: 18%;
+  padding-right: 2%;
+  font-size: 60px;
   line-height: 1.2;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px black, 0 0 2.5px #0000ff, 0 0 5px darkblue;
+  letter-spacing: .125in;
 }
 
 /* PERSONAL SECTION STYLE */
@@ -102,138 +109,239 @@ main {
   background: #ffff;
 }
 
-section {
-  padding: 60px;
-}
-
 /* PERSONAL-ABOUT */
-.info h2 {
-  color: #30336b;
-  font-size: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
 
-.info h3,
-.info h4 {
-  color: #30336b;
-  background: ;
-  width: 100%;
-}
-
-.info h4 {
-  font-size: 12px;
-  font-weight: lighter;
-}
-
-.infos {
+.about {
   margin: 30px;
   padding: 50px 0 50px 120px;
   width: 90%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-round;
+  justify-content: space-evenly;
 }
 
-.info {
-  padding: 0 25px 25px 25px;
-  line-height: 1.3;
-}
-
-.info p {
+.about h2 {
   color: #30336b;
-  font-size: 15px;
-  text-align: justify;
+  font-size: 60px;
   display: flex;
-  padding: 7.5px 5px 0 30px;
-  border-left: 2px solid #30336b;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: right;
+  max-width: 15%;
+  align-self: center;
+  padding-top: 0%;
 }
 
 .info-text {
-  margin: -120px 10px 0 200px;
+  color: #30336b;
+  font-size: 20px;
+  text-align: justify;
+  padding: 2.5%;
+  margin: 2%;
+  max-width: 83%;
+  line-height: 1.3;
+  border-left: 2px solid #30336b;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* PERSONAL_WORK */
 
-/* PRSONAL_WORK */
+.works {
+  box-sizing: border-box;
+  margin: 30px;
+  padding: 10px 50px 50px 200px;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-.work-imgs {
-  margin: -120px 0 50px 200px;
+.works h2 {
+  color: #30336b;
+  font-size: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -65px;
+  margin-right: 32px;
+  text-align: right;
+  max-width: 15%;
+  align-self: center;
+  padding-top: 0%;
+}
+
+.info-work {
+  display: flex;
+  flex-wrap: wrap;;
+  padding: 2.5%;
   border-left: 2px solid #30336b;
 }
 
+.work-img {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.work-img img {
+  margin-top: 8px;
+  vertical-align: middle;
+  padding: .3%;
+}
+
 .work-img a {
-  border: 3px solid var(--primary-color);
-  display: block;
-  padding: 10px 25px;
-  width: 400px;
-  height: 200px;
-  margin: 5%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
 .work-img a:first-child {
-  width: 900px;
+  width: 805px;
   height: 200px;
-}
-
-.work-img {
-  position: relative;
-  text-align: center;
-  color: #30336b
 }
 
 .bottom-left {
   position: absolute;
-  bottom: 20px;
-  left: 50px;
   font-size: 25px;
+  text-align: left;
+  color: #30336b;
+  margin: -4% -5% 0 1%;
+  background-color: #fff;
 }
 
 .bottom-right {
   position: absolute;
-  bottom: 5px;
-  left: 50px;
   font-size: 15px;
+  text-align: left;
+  color: #30336b;
+  margin: -2% -5% 0 1%;
+  background-color: #fff;
+}
+
+.text-left {
+  position: absolute;
+  font-size: 25px;
+  text-align: right;
+  color: #30336b;
+  margin: -3.5% -5% -2% 30%;
+  background-color: #fff;
+}
+
+.text-right {
+  position: absolute;
+  font-size: 15px;
+  text-align: right;
+  color: #30336b;
+  margin: -1.75% -5% -2% 30%;
+  background-color: #fff;
 }
 
 /* PERSONAL-CONTACT */
 
-.contacts a {
-  text-decoration: none;
-  color: #30336b;
-}
-
-.contacts ul {
-  padding: 35px 0 0 10px;
+.info-contacts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  border-left: 2px solid #30336b;
+  justify-content: center;
+  padding: .5%;
+  margin: 3%;
+  background-color: #218c74;
+  outline: 5px solid #eb3b5a;
+  border: 3px double var(--primary-color);
 }
 
-.contacts ul li a {
-  padding:10px 10px 10px 30px;
+.info-contacts h2 {
+  font-size: 40px;
+  color: #30336b;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  margin: 0;
+  padding-top: 1%;
+  padding-right: 2%;
+  margin-left: -7%;
+  margin-right: 10%;
+  border-right: 2px solid #30336b;
+}
+
+.list-contacts {
+  color: #30336b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin: 2%;
+  max-width: 100%;
+  background-color: #218c74;
+}
+
+.list-contacts a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.list-contacts ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.list-contacts ul li a {
+  padding: 15px;
   font-weight: lighter;
   font-size: 1.55vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.contacts ul li a:hover {
-  background: var(--primary-color);
-  color: #ffff;
-  border-radius: 15px;
+.list-contacts ul li a:hover {
+  color: var(--primary-color);
   text-shadow: none;
 }
 
-.contacts {
-  margin: -120px 10px 0 200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
 
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  /* .hero { }*/
+
+  .tagline {
+    width: 100%;
+    margin: 2%;
+  }
+
+  .infos {
+    flex: 0 70%;
+  }
+
+  .info-me h2 {
+    width: 100%;
+    margin-left: -60px;
+  }
+
+  .list-contacts {
+    font-size: 50px;
+  }
+
+  .info-contacts h2 {
+    font-size: 25px;
+    width: 100%;
+  }
+}  
