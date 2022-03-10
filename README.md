@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 ## Purpose
 To create a personal portfolio using advanced CSS styling
